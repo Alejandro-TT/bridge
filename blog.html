@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | BRIDGE</title>
+    <meta name="description" content="Recursos, consejos y reflexiones para padres, alumnos y educadores de la comunidad BRIDGE." />
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header>
+      <a href="index.html" class="logo">
+        <div class="logo-icon-wrap">
+          <div class="logo-person"><div class="logo-dot"></div><div class="logo-arch"></div></div>
+          <div class="logo-person"><div class="logo-dot"></div><div class="logo-arch"></div></div>
+          <div class="logo-person"><div class="logo-dot"></div><div class="logo-arch"></div></div>
+          <div class="logo-person"><div class="logo-dot"></div><div class="logo-arch"></div></div>
+        </div>
+        <div class="logo-text">BRIDGE</div>
+        <div class="logo-sub">Building Relationships in Development, Growth & Education</div>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="razones.html">Razones para elegirnos</a></li>
+          <li><a href="colegios.html">Nuestros colegios</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="admisiones.html">Admisiones</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Blog Hero -->
+    <section class="blog-hero">
+      <div class="blog-hero-content">
+        <span class="blog-eyebrow">Comunidad BRIDGE</span>
+        <h1>Lee, aprende, inspírate</h1>
+        <p>Recursos, consejos y reflexiones para toda la comunidad: padres, alumnos y educadores.</p>
+      </div>
+      <div class="blog-hero-wave">
+        <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L0,120Z"/></svg>
+      </div>
+    </section>
+
+    <!-- Filtros -->
+    <section class="section blog-section">
+      <div class="blog-filter-wrap">
+        <button class="filter-btn active" data-filter="all" id="filter-all">Todos</button>
+        <button class="filter-btn" data-filter="padres" id="filter-padres">👨‍👩‍👧 Para Padres</button>
+        <button class="filter-btn" data-filter="alumnos" id="filter-alumnos">🎓 Para Alumnos</button>
+        <button class="filter-btn" data-filter="docentes" id="filter-docentes">📚 Para Docentes</button>
+      </div>
+
+      <!-- Grid de Cards -->
+      <div class="blog-grid" id="blog-grid">
+
+        <!-- PADRES -->
+        <article class="blog-card" data-category="padres">
+          <div class="blog-card-img">
+            <img src="/img/blog_padres_1.png" alt="Cómo acompañar a tu hijo en momentos de estrés académico" />
+            <span class="blog-badge padres">Para Padres</span>
+          </div>
+          <div class="blog-card-body">
+            <h3>Cómo acompañar a tu hijo en los momentos de mayor estrés académico</h3>
+            <p>Estrategias prácticas y empáticas para que papás y mamás puedan estar presentes sin generar más presión en épocas de exámenes y entregas importantes.</p>
+            <div class="blog-card-footer">
+              <span class="read-time">⏱ 5 min de lectura</span>
+              <a href="#" class="btn-blog">Leer más</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="padres">
+          <div class="blog-card-img">
+            <img src="/img/blog_padres_3.png" alt="5 hábitos de estudio que puedes fomentar desde casa" />
+            <span class="blog-badge padres">Para Padres</span>
+          </div>
+          <div class="blog-card-body">
+            <h3>5 hábitos de estudio que puedes fomentar desde casa</h3>
+            <p>El hogar es el primer aula. Descubre rutinas simples que, practicadas en familia, pueden hacer una gran diferencia en el rendimiento y la motivación de tus hijos.</p>
+            <div class="blog-card-footer">
+              <span class="read-time">⏱ 4 min de lectura</span>
+              <a href="#" class="btn-blog">Leer más</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="padres">
+          <div class="blog-card-img">
+            <img src="/img/blog_padres_2.png" alt="La comunicación con el colegio: una alianza que transforma" />
+            <span class="blog-badge padres">Para Padres</span>
+          </div>
+          <div class="blog-card-body">
+            <h3>La comunicación con el colegio: una alianza que transforma</h3>
+            <p>Cuando la familia y la institución educativa trabajan juntas, el estudiante florece. Te contamos cómo construir esa relación de confianza con los docentes y orientadores.</p>
+            <div class="blog-card-footer">
+              <span class="read-time">⏱ 6 min de lectura</span>
+              <a href="#" class="btn-blog">Leer más</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ALUMNOS -->
+        <article class="blog-card" data-category="alumnos">
+          <div class="blog-card-img">
+            <img src="/img/blog_alumnos_1.png" alt="Cómo organizar tu tiempo sin sacrificar lo que amas" />
+            <span class="blog-badge alumnos">Para Alumnos</span>
+          </div>
+          <div class="blog-card-body">
+            <h3>Cómo organizar tu tiempo sin sacrificar lo que amas</h3>
+            <p>Estudiar, practicar un deporte, tener tiempo libre... ¿es posible? Sí, y te mostramos cómo lograrlo con técnicas de planificación sencillas y efectivas.</p>
+            <div class="blog-card-footer">
+              <span class="read-time">⏱ 5 min de lectura</span>
+              <a href="#" class="btn-blog">Leer más</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="alumnos">
+          <div class="blog-card-img">
+            <img src="/img/blog_alumnos_3.png" alt="El poder del propósito" />
+            <span class="blog-badge alumnos">Para Alumnos</span>
+          </div>
+          <div class="blog-card-body">
+            <h3>El poder del propósito: ¿por qué es importante saber para qué estudias?</h3>
+            <p>Encontrar el "para qué" detrás de cada esfuerzo lo cambia todo. Reflexiones y ejercicios para conectar tus estudios con tus sueños y tu misión de vida.</p>
+            <div class="blog-card-footer">
+              <span class="read-time">⏱ 7 min de lectura</span>
+              <a href="#" class="btn-blog">Leer más</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="alumnos">
+          <div class="blog-card-img">
+            <img src="/img/blog_alumnos_2.png" alt="Liderazgo desde el aula" />
+            <span class="blog-badge alumnos">Para Alumnos</span>
+          </div>
+          <div class="blog-card-body">
+            <h3>Liderazgo desde el aula: pequeñas acciones, grandes impactos</h3>
+            <p>No necesitas un título para ser líder. Descubre cómo tu actitud, tus palabras y tu ejemplo pueden inspirar a quienes te rodean cada día en el colegio.</p>
+            <div class="blog-card-footer">
+              <span class="read-time">⏱ 4 min de lectura</span>
+              <a href="#" class="btn-blog">Leer más</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- DOCENTES -->
+        <article class="blog-card" data-category="docentes">
+          <div class="blog-card-img">
+            <img src="/img/blog_docentes_1.png" alt="Estrategias de atención personalizada" />
+            <span class="blog-badge docentes">Para Docentes</span>
+          </div>
+          <div class="blog-card-body">
+            <h3>Estrategias de atención personalizada en aulas diversas</h3>
+            <p>Cada estudiante es único. Exploramos metodologías concretas para que los educadores puedan atender los distintos ritmos, estilos y necesidades dentro del aula.</p>
+            <div class="blog-card-footer">
+              <span class="read-time">⏱ 8 min de lectura</span>
+              <a href="#" class="btn-blog">Leer más</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="docentes">
+          <div class="blog-card-img">
+            <img src="/img/blog_docentes_2.png" alt="El rol del docente en la formación del carácter" />
+            <span class="blog-badge docentes">Para Docentes</span>
+          </div>
+          <div class="blog-card-body">
+            <h3>El rol del docente en la formación del carácter del estudiante</h3>
+            <p>Más allá de los contenidos, el educador es un referente de vida. Reflexionamos sobre el enorme impacto que tiene un maestro comprometido en la persona que se forma.</p>
+            <div class="blog-card-footer">
+              <span class="read-time">⏱ 6 min de lectura</span>
+              <a href="#" class="btn-blog">Leer más</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="docentes">
+          <div class="blog-card-img">
+            <img src="/img/blog_docentes_3.png" alt="Bilingüismo en la práctica" />
+            <span class="blog-badge docentes">Para Docentes</span>
+          </div>
+          <div class="blog-card-body">
+            <h3>Bilingüismo en la práctica: más allá del inglés como materia</h3>
+            <p>El verdadero bilingüismo ocurre cuando el idioma se convierte en un vehículo de pensamiento. Herramientas y enfoques para integrarlo de forma auténtica al aula.</p>
+            <div class="blog-card-footer">
+              <span class="read-time">⏱ 7 min de lectura</span>
+              <a href="#" class="btn-blog">Leer más</a>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /blog-grid -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-logo">
+        <div class="logo-text">BRIDGE</div>
+        <div class="logo-sub">Building Relationships in Development, Growth & Education</div>
+      </div>
+      <div class="footer-nav">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="razones.html">Razones para elegirnos</a>
+        <a href="colegios.html">Nuestros colegios</a>
+        <a href="blog.html">Blog</a>
+        <a href="admisiones.html">Admisiones</a>
+      </div>
+      <div class="copyright">&copy; 2026 BRIDGE. Todos los derechos reservados.</div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

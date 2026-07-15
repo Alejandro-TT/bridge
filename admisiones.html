@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admisiones | BRIDGE</title>
+    <meta name="description" content="Inicia el proceso de admisión a los colegios BRIDGE. Completa el formulario de interés y da el primer paso hacia una educación que transforma." />
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header>
+      <a href="index.html" class="logo">
+        <div class="logo-icon-wrap">
+          <div class="logo-person"><div class="logo-dot"></div><div class="logo-arch"></div></div>
+          <div class="logo-person"><div class="logo-dot"></div><div class="logo-arch"></div></div>
+          <div class="logo-person"><div class="logo-dot"></div><div class="logo-arch"></div></div>
+          <div class="logo-person"><div class="logo-dot"></div><div class="logo-arch"></div></div>
+        </div>
+        <div class="logo-text">BRIDGE</div>
+        <div class="logo-sub">Building Relationships in Development, Growth & Education</div>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="razones.html">Razones para elegirnos</a></li>
+          <li><a href="colegios.html">Nuestros colegios</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="admisiones.html" class="active">Admisiones</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Admisiones Hero -->
+    <section class="adm-hero">
+      <div class="adm-hero-content">
+        <span class="adm-badge">🗓️ Admisiones abiertas — Ciclo 2027</span>
+        <h1>Un primer paso hacia una educación que transforma</h1>
+        <p>Inicia el proceso de admisión y descubre si BRIDGE es la comunidad educativa para tu familia.</p>
+        <a href="#formulario" class="btn btn-primary">Solicitar información</a>
+      </div>
+      <div class="blog-hero-wave">
+        <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L0,120Z"/></svg>
+      </div>
+    </section>
+
+    <!-- Info Cards -->
+    <section class="section">
+      <h2 class="section-title">Información Clave</h2>
+      <div class="adm-info-grid">
+        <div class="adm-info-card">
+          <div class="adm-info-icon">📅</div>
+          <h4>Período de admisiones</h4>
+          <p>Enero — Marzo 2027</p>
+        </div>
+        <div class="adm-info-card">
+          <div class="adm-info-icon">🏫</div>
+          <h4>Niveles disponibles</h4>
+          <p>Preescolar, Primaria y Secundaria</p>
+        </div>
+        <div class="adm-info-card">
+          <div class="adm-info-icon">🌍</div>
+          <h4>Países disponibles</h4>
+          <p>Costa Rica, Honduras, Guatemala y El Salvador</p>
+        </div>
+        <div class="adm-info-card">
+          <div class="adm-info-icon">📞</div>
+          <h4>Contacto directo</h4>
+          <p>admisiones@bridge.edu</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline del proceso -->
+    <section class="section" style="background-color: var(--color-surface);">
+      <h2 class="section-title">Proceso de Admisión</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-circle">1</div>
+          <div class="timeline-content">
+            <h4>Llena el formulario de interés</h4>
+            <p>Cuéntanos sobre tu hijo y tu familia. Es el primer paso y solo toma unos minutos.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-circle">2</div>
+          <div class="timeline-content">
+            <h4>Entrevista con orientación</h4>
+            <p>Un especialista de BRIDGE te contactará en 3–5 días hábiles para conocerte mejor.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-circle">3</div>
+          <div class="timeline-content">
+            <h4>Visita al colegio</h4>
+            <p>Conoce las instalaciones, el ambiente y al equipo del colegio de tu preferencia.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-circle">4</div>
+          <div class="timeline-content">
+            <h4>Evaluación de admisión</h4>
+            <p>Proceso amigable y enfocado en el potencial, las habilidades y la personalidad del estudiante.</p>
+          </div>
+        </div>
+        <div class="timeline-item last">
+          <div class="timeline-circle">5</div>
+          <div class="timeline-content">
+            <h4>¡Bienvenido a BRIDGE!</h4>
+            <p>Confirmación de cupo y proceso de matrícula. El inicio de una gran etapa.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario -->
+    <section class="section" id="formulario">
+      <h2 class="section-title">Formulario de Interés</h2>
+      <p style="text-align:center; color: var(--color-text-light); max-width:600px; margin: -2rem auto 3rem;">Completa el siguiente formulario y uno de nuestros asesores de admisión se pondrá en contacto contigo muy pronto.</p>
+
+      <form class="adm-form" id="adm-form" novalidate>
+        <fieldset class="adm-fieldset">
+          <legend>Datos del Tutor</legend>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="tutor-nombre">Nombre completo *</label>
+              <input type="text" id="tutor-nombre" name="tutor-nombre" placeholder="Ej. María García" required />
+              <span class="form-error">Este campo es requerido.</span>
+            </div>
+            <div class="form-group">
+              <label for="tutor-email">Correo electrónico *</label>
+              <input type="email" id="tutor-email" name="tutor-email" placeholder="Ej. maria@email.com" required />
+              <span class="form-error">Ingresa un correo válido.</span>
+            </div>
+            <div class="form-group">
+              <label for="tutor-telefono">Número de teléfono *</label>
+              <input type="tel" id="tutor-telefono" name="tutor-telefono" placeholder="Ej. +502 1234-5678" required />
+              <span class="form-error">Este campo es requerido.</span>
+            </div>
+            <div class="form-group">
+              <label for="tutor-pais">País de residencia *</label>
+              <select id="tutor-pais" name="tutor-pais" required>
+                <option value="">Selecciona un país</option>
+                <option value="cr">Costa Rica</option>
+                <option value="hn">Honduras</option>
+                <option value="gt">Guatemala</option>
+                <option value="sv">El Salvador</option>
+              </select>
+              <span class="form-error">Selecciona tu país.</span>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="adm-fieldset">
+          <legend>Datos del Alumno</legend>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="alumno-nombre">Nombre completo del alumno *</label>
+              <input type="text" id="alumno-nombre" name="alumno-nombre" placeholder="Ej. Sofía García" required />
+              <span class="form-error">Este campo es requerido.</span>
+            </div>
+            <div class="form-group">
+              <label for="alumno-edad">Edad *</label>
+              <input type="number" id="alumno-edad" name="alumno-edad" placeholder="Ej. 8" min="3" max="18" required />
+              <span class="form-error">Ingresa una edad válida (3–18).</span>
+            </div>
+            <div class="form-group">
+              <label for="alumno-grado">Grado al que aplica *</label>
+              <select id="alumno-grado" name="alumno-grado" required>
+                <option value="">Selecciona un grado</option>
+                <option value="preescolar">Preescolar</option>
+                <option value="primero">1° Primaria</option>
+                <option value="segundo">2° Primaria</option>
+                <option value="tercero">3° Primaria</option>
+                <option value="cuarto">4° Primaria</option>
+                <option value="quinto">5° Primaria</option>
+                <option value="sexto">6° Primaria</option>
+                <option value="septimo">7° Secundaria</option>
+                <option value="octavo">8° Secundaria</option>
+                <option value="noveno">9° Secundaria</option>
+                <option value="decimo">10° Secundaria</option>
+                <option value="once">11° Secundaria</option>
+              </select>
+              <span class="form-error">Selecciona un grado.</span>
+            </div>
+            <div class="form-group">
+              <label for="como-conocio">¿Cómo conociste BRIDGE?</label>
+              <select id="como-conocio" name="como-conocio">
+                <option value="">Selecciona una opción</option>
+                <option value="redes">Redes sociales</option>
+                <option value="recomendacion">Recomendación de amigos/familia</option>
+                <option value="busqueda">Búsqueda en internet</option>
+                <option value="evento">Evento o feria educativa</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="adm-fieldset">
+          <legend>Información Adicional</legend>
+          <div class="form-group full-width">
+            <label for="comentarios">Comentarios o preguntas</label>
+            <textarea id="comentarios" name="comentarios" rows="4" placeholder="Cuéntanos algo más sobre tu familia o las expectativas que tienen para la educación de tu hijo..."></textarea>
+          </div>
+          <div class="form-group full-width">
+            <label class="checkbox-label">
+              <input type="checkbox" id="acepto-terminos" name="acepto-terminos" required />
+              <span>Acepto que BRIDGE me contacte con información sobre el proceso de admisión. *</span>
+            </label>
+            <span class="form-error">Debes aceptar para continuar.</span>
+          </div>
+        </fieldset>
+
+        <div style="text-align: center; margin-top: 2rem;">
+          <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+            Iniciar mi proceso de admisión →
+          </button>
+        </div>
+
+        <div class="form-success" id="form-success">
+          <div class="success-icon">✅</div>
+          <h3>¡Gracias por tu interés!</h3>
+          <p>Hemos recibido tu solicitud. Un asesor de BRIDGE se pondrá en contacto contigo en los próximos 3–5 días hábiles.</p>
+        </div>
+      </form>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" style="background-color: var(--color-surface);">
+      <h2 class="section-title">Preguntas Frecuentes</h2>
+      <div class="faq-container" id="faq-container">
+
+        <div class="faq-item">
+          <button class="faq-question" id="faq-q1">
+            ¿Cuál es el costo del proceso de admisión?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>El proceso de admisión no tiene costo. La evaluación de admisión y la entrevista son completamente gratuitas. Una vez confirmado el cupo, se inicia el proceso de matrícula con los aranceles correspondientes a cada institución.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" id="faq-q2">
+            ¿Qué pasa si mi hijo viene de otra metodología de enseñanza?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>En BRIDGE damos la bienvenida a estudiantes de diversas trayectorias educativas. Nuestro equipo de orientación realiza una evaluación de ingreso para identificar las fortalezas del alumno y diseñar un plan de integración personalizado.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" id="faq-q3">
+            ¿Los colegios BRIDGE son mixtos?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Nuestra red cuenta con modelos diversos: colegios mixtos (preescolares), colegios bilingües exclusivos para niñas y colegios bilingües exclusivos para niños. Puedes consultar la oferta específica de cada país en la sección "Nuestros Colegios".</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" id="faq-q4">
+            ¿Cómo funciona el programa bilingüe?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Nuestro programa bilingüe va más allá del inglés como materia. Desde edades tempranas, los alumnos reciben instrucción en inglés en diversas áreas del currículo, fomentando un pensamiento genuinamente bilingüe y preparándolos para el mundo globalizado.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" id="faq-q5">
+            ¿Qué documentos necesito para iniciar el proceso?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Para iniciar solo necesitas completar el formulario de interés. Posteriormente, el asesor de admisión te indicará los documentos específicos requeridos (certificados de notas, documento de identidad del alumno, etc.) según el colegio y el grado al que aplica.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-logo">
+        <div class="logo-text">BRIDGE</div>
+        <div class="logo-sub">Building Relationships in Development, Growth & Education</div>
+      </div>
+      <div class="footer-nav">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="razones.html">Razones para elegirnos</a>
+        <a href="colegios.html">Nuestros colegios</a>
+        <a href="blog.html">Blog</a>
+        <a href="admisiones.html">Admisiones</a>
+      </div>
+      <div class="copyright">&copy; 2026 BRIDGE. Todos los derechos reservados.</div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
