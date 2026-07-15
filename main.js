@@ -1,6 +1,41 @@
 // main.js — Lógica de interacciones BRIDGE
 
 // ============================
+// MOBILE MENU (Hamburger)
+// ============================
+function initMobileMenu() {
+  const hamburger = document.getElementById('hamburger-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileClose = document.getElementById('mobile-close');
+  const mobileOverlay = document.getElementById('mobile-overlay');
+
+  if (!hamburger || !mobileMenu) return;
+
+  function openMenu() {
+    mobileMenu.classList.add('open');
+    hamburger.classList.add('open');
+    hamburger.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    mobileMenu.classList.remove('open');
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  hamburger.addEventListener('click', openMenu);
+  mobileClose?.addEventListener('click', closeMenu);
+  mobileOverlay?.addEventListener('click', closeMenu);
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMenu();
+  });
+}
+
+// ============================
 // BLOG: Filtro por categoría
 // ============================
 function initBlogFilter() {
@@ -113,6 +148,7 @@ function initAdmForm() {
 // INIT
 // ============================
 document.addEventListener('DOMContentLoaded', () => {
+  initMobileMenu();
   initBlogFilter();
   initFAQ();
   initAdmForm();

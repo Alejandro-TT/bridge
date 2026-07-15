@@ -31,7 +31,33 @@
           <li><a href="admisiones.html" class="active">Admisiones</a></li>
         </ul>
       </nav>
+      <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </header>
+
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menú de navegación">
+      <div class="mobile-menu-overlay" id="mobile-overlay"></div>
+      <div class="mobile-menu-panel">
+        <div class="mobile-menu-header">
+          <span class="mobile-menu-logo">BRIDGE</span>
+          <button class="mobile-menu-close" id="mobile-close" aria-label="Cerrar menú">✕</button>
+        </div>
+        <nav class="mobile-menu-nav">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="razones.html">Razones para elegirnos</a></li>
+            <li><a href="colegios.html">Nuestros colegios</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="admisiones.html" class="active">Admisiones</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-cta">
+          <a href="admisiones.html" class="btn btn-primary">Solicitar información</a>
+        </div>
+      </div>
+    </div>
 
     <!-- Admisiones Hero -->
     <section class="adm-hero">
