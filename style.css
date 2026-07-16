@@ -126,7 +126,12 @@ nav a:hover::after, nav a.active::after {
 .hero {
   background: linear-gradient(135deg, var(--color-primary) 0%, #153866 100%);
   color: white;
-  padding: 10rem 5% 8rem;
+  padding: 0 5%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -214,7 +219,7 @@ nav a:hover::after, nav a.active::after {
 /* Datos (Estadísticas) */
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -429,7 +434,12 @@ nav a:hover::after, nav a.active::after {
 /* Nosotros Specific */
 .about-hero {
   background: var(--color-primary);
-  padding: 8rem 5% 6rem;
+  padding: 0 5%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   color: white;
   position: relative;
@@ -972,7 +982,8 @@ footer {
 
   /* About hero */
   .about-hero {
-    padding: 6rem 5% 4rem;
+    min-height: 50vh;
+    padding: 0 5%;
   }
   .about-hero h1 {
     font-size: 2.2rem;
@@ -1086,7 +1097,12 @@ footer {
 .blog-hero {
   background: linear-gradient(135deg, var(--color-primary) 0%, #1a3f6f 100%);
   color: white;
-  padding: 9rem 5% 5rem;
+  padding: 0 5%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -1283,7 +1299,12 @@ footer {
 .adm-hero {
   background: linear-gradient(135deg, var(--color-primary) 0%, #1a3f6f 100%);
   color: white;
-  padding: 9rem 5% 5rem;
+  padding: 0 5%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   position: relative;
   overflow: hidden;
